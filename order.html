@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+
+<div class="row">
+  <div class="column">
+    <img src="https://i0.wp.com/www.relishthebite.com/wp-content/uploads/2016/10/IMG_6724.jpg" alt="Snow" style="width:100%">
+    <h2><b>Mutton murra 600 Rs.</b></h2>
+ 
+    <img src="http://i0.wp.com/www.relishthebite.com/wp-content/uploads/2015/06/Chicken-Biryani-14.jpg" alt="biryani" style="width:100%">
+    <h2><b>Chicken Biryani 500 Rs.</b></h2>
+  </div>
+  <div class="column">
+    <img src="https://www.desieats.co.nz/wp-content/uploads/2017/11/Karachi-Chicken-Biryani.jpg" alt="chicken" width="650" height="450">
+     <h2><b> chicken Biryani 800 Rs.</b></h2>
+   
+    <img src="http://www.fuddruckers.ae/wp-content/uploads/2017/02/Deluxe-Burger.jpg" alt="deluxe burger" width="600" height="550">
+     <h2><b>Deluxe Burger 700 Rs.</b></h2>
+  </div>
+
+
+  <div class="column">
+    <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2018/9/11/WU2001_Loaded-Veggie-Pasta_s4x3.jpg.rend.hgtvcom.826.620.suffix/1536690646319.jpeg" alt="Mountains" width="650" height="450">
+     <h2><b> veggie pasta 400 Rs.</b></h2>
+ 
+    <img src="https://www.relevance.com/wp-content/uploads/2014/09/Why-Search-Is-Still-Your-Digital-Bread-And-Butter.jpg" alt="bread and butter" width="600" height="550">
+     <h2><b> Bread and Butter 80 Rs.</b></h2>
+  </div>
+
+</div>
+
+<form align="center" action="orderplaced1.php" method="post">
+<h1>Select the items</h1>
+ <select name="name">
+ <optgroup label="STARTERS">
+<option value="Tomato soup 450 Rs">Tomato soup 450 Rs</option>
+<option value="Chicken Salad 250 Rs">Chicken Salad 250 Rs</option>
+<option value="Bread and Butter 80 Rs">Bread and Butter 80 Rs</option>
+</optgroup>
+<optgroup label="MAIN COURSES">
+<option value="Mutton Murra 600 Rs">Mutton Murra 600 Rs</option>
+<option value="Chicken Biryani 500 Rs">Chicken Biryani 500 Rs</option>
+<option value="Veggie Pasta 400 Rs">Veggie Pasta 400 Rs</option>
+<option value="Chicken and potatoes 350 Rs">Chicken and potatoes 350 Rs</option>
+<option value="Deluxe Burger 700 Rs">Deluxe Burger 700 Rs</option>
+</optgroup>
+<optgroup label="DESSERTS">
+<option value="Fruit Salad 350 Rs">Fruit Salad 350 Rs</option>
+<option value="Ice Cream 450 Rs">Ice Cream 450 Rs</option>
+<option value="Chocolate Cake 700 Rs">Chocolate Cake 700 Rs</option>
+<option value="Cheese 600 Rs">Cheese 600 Rs</option>
+
+</optgroup>
+</select>
+<br><br><br>
+  
+  <label for="address"><br><b>Enter your Address:</b><br><textarea name="address" id="address"rows="4" cols="50"></textarea><br><br>
+
+
+<input type="submit" value="submit">
+</form>
+
+</body>
+</html>

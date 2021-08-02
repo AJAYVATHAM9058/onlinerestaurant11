@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Food Ordering System</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<style>
+		*{
+	margin: 0;padding: 0;box-sizing: border-box; 
+}
+
+header{
+	min-height:100vh;
+	background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url("https://restaurantden.com/wp-content/uploads/2017/03/au-cheval.jpg");
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+	background-size: cover;
+}
+
+nav{
+	width: 100%;height: 15vh;
+	background: rgba(0,0,0,0.2);
+	color: white;display: flex;justify-content: space-between;
+	align-items: center;text-transform: uppercase;
+}
+
+nav .logo{
+	width: 25%;text-align: center;
+	/*background: red;*/
+}
+
+nav .menu{
+	width: 40%;
+	display: flex;justify-content: space-around;
+}
+
+nav .menu a{
+	width: 25%;
+	text-decoration: none; color: white;
+	font-weight: bold;	 
+}
+
+nav .menu a:first-child{
+	color: #00b894;
+
+}
+
+main{
+	height: 100%;
+	width: 85vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;color: white;
+}
+
+section{
+
+}
+
+section h3{
+	font-size: 35px;font-weight: 200;letter-spacing: 3px;
+	text-shadow: 1px 1px 2px black;
+}
+
+section h1{
+	margin: 30px; 0 20px 0;
+	font-size: 55px;
+	font-weight: 700;
+	text-shadow: 2px 1px 5px black;
+	text-transform: uppercase;
+}
+
+section p{
+	font-size: 25px;
+	color: #eee;
+	white-space: 2px;
+	margin-bottom: 25px;
+	text-shadow: 1px 1px 1px black;
+}
+
+section a{
+	padding: 12px 30px;
+	border-radius: 4px;
+	outline: none;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 500;
+	text-decoration: none;
+	letter-spacing: 1px;
+	transition: all .5s ease;
+}
+
+section .btnone{
+    /*background: #00b894;*/
+    background: #fff;
+    color: #000;
+}
+.btnone:hover{
+	background: #231AD1;
+	color: white; 
+}
+
+section .btntwo{
+	background: #00b894;
+	color: white; 
+}
+
+.btntwo:hover{
+	background: #3AA750;
+    color: #000;
+}
+section .btnthree{
+	background: #D1C636;
+	color: white; 
+}
+
+.btnthree:hover{
+	background: #b021b0;
+    color: #000;
+}
+
+.change_content:after{
+	content: '';
+	animation: changetext 10s infinite linear;
+	color: #00b894;
+}
+
+
+        </style>		
+</head>
+<body>
+
+<header>
+	
+	<nav>
+		<div class="logo"><h1 class="animated infinite heartBeat">MAHARAJ RESTAURANT</h1></div>
+		<div class="menu">
+			<a href="index.html">Home</a>
+			<a href="menu1.html">Menu</a>
+			<a href="photo.html">photos</a>
+			<a href="contact.html">Contact</a>
+		</div>
+		</nav>
+		<main>
+			<section>
+				<b><h3>Order Your Favourite Dish</h3></b>
+                                <br>
+				<h2>Laughter is Brightest Where Food is Best</h2>
+				<p>Order Online</p>
+                                <p><b>get 20% off on your first order</b></p>
+                                <br>
+				<a href="login.html" class="btnone" >SignUp Here</a>
+				<a href="reg1.html"class="btntwo">Login to Order</a>
+				<a href="feedback.html" class="btnthree">Feedback</a>
+                                <br><br><br><br><br><br><br><br><br><br>
+				<p><b>monday-friday 10-23|saturday 14-02</b></p>
+                                <p>Old MlA quarters Road,Hyderaguda,Himayatnagar,Telangana</p>
+				<p>500 029,
+				powered by <a href="https://www.tofler.in/skandhanshi-infra-projects-india-private-limited/company/U45205KA2015PTC082244" target="_blank">Skandhanshi Infra Projects</a>
+
+			</section>
+		</main>
+	
+</header>
+</body>
+</html>
